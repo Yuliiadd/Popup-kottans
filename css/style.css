@@ -38,11 +38,14 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+
 .header {
-    box-shadow: 10px 5px 50px rgba(0, 0, 255, .2);
 	display: flex;
 	justify-content: space-between;
 	min-height: 80px;
+	margin: 0 auto;
+	width: 90%;
+	border-bottom: 1px solid rgba(0, 0, 255, .2);
 }
 
 .logo {
@@ -58,25 +61,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-family: Verdana, sans-serif;
 	font-size: 20px;
 	color: black;
-	margin-left: 40px;
 }
 
-.nav ul, li {
+.nav_item {
+	margin: 0 20px;
+}
+
+.nav ul {
 	display: flex;
 	align-items: center;
 }
-
-/* .nav ul {
-	width: 350px;
-	display: flex;
-	align-items: center;
-} */
 
 .nav {
-width: 350px;
 display: flex;
-padding-right: 35px;
 align-items: center;
+justify-content: center;
 
 }
 
@@ -90,11 +89,12 @@ align-items: center;
 
 
 /* розробка попапа */
+
 .context__menu {
 	display: none;
 	position: absolute;
 	padding-top: 10px;
-	right: 140px;
+	right: 240px;
 }
 
 .menu {
@@ -102,16 +102,15 @@ align-items: center;
 	height: 365px;
 	background-color: white;
 	border: 1px solid rgba(0, 0, 255, .2);
-    border-radius: 10px;
     position: relative;
 	cursor:default;
-	/* overflow-y: scroll; */
+	overflow-y: auto;
 }
 
 .menu::before, .menu::after {
     content: ''; 
     position: absolute;
-    right: 38px; top: -21px;
+    right: 20px; top: -21px;
     border: 10px solid transparent;
     border-bottom: 10px solid rgba(0, 0, 255, .2);
    }
