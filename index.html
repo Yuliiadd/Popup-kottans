@@ -11,113 +11,146 @@
 
     <header class="header">
         <div class="logo">
-            <a href="https://github.com/Yuliiadd/kottans-frontend"><img class="logo_img" src="img/logo.png" alt="logo"></a>
+            <a class="logo__link" href="https://github.com/Yuliiadd/kottans-frontend"><img class="logo__img" src="img/logo.png" alt="logo"></a>
         </div>
         <nav class="nav">
-            <ul>
+            <ul class="navigation__list" >
                 <li class="nav_item"><a class="link" href="#">Mail</a></li>
                 <li class="nav_item"><a class="link" href="#">Images</a></li>
-                <li class="nav_item"><a class="link" href="#">
-                    <div class="ch_box">
+                <li class="nav_item">
+                    <div class="ch_box popup">
                         <label for="checkbox">
                         <img class="nav_img check" src="img/popup-button.png" alt="pop-up">
                         </label>
                         <input type="checkbox" id="checkbox" class="checkbox">
                         <div class="context__menu">
                             <div class="menu">
-                                <div class="main__menu">
-                                    <div class="menu__item">
-                                        <img src="img/calendar.png" alt="Calendar" class="icon">
-                                        <p class="icon__name">Calendar</p>
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/mail.png" alt="Mail" class="icon">
-                                        <p class="icon__name">Mail</p>  
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/news.png" alt="News" class="icon">
-                                        <p class="icon__name">News</p>
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/maps.png" alt="Map" class="icon">
-                                        <p class="icon__name">Map</p>
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/files.png" alt="Files" class="icon">
-                                        <p class="icon__name">Files</p>
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/contacts.png" alt="Contacts" class="icon">
-                                        <p class="icon__name">Contacts</p>
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/tanslation.png" alt="Translate" class="icon">
-                                        <p class="icon__name">Translate</p>
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/videos.png" alt="Videos" class="icon">
-                                        <p class="icon__name">Videos</p>
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/search.png" alt="Search" class="icon">
-                                        <p class="icon__name">Search</p> 
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/photos.png" alt="Photos" class="icon">
-                                        <p class="icon__name">Photos</p>   
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/apps.png" alt="Apps" class="icon">
-                                        <p class="icon__name">Apps</p>
-                                    </div>
-                                    <div class="menu__item">
-                                        <img src="img/documents.png" alt="Documents" class="icon">
-                                        <p class="icon__name">Documents</p>
-                                    </div>
-                                </div>
+                                <ul class="main__menu">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/calendar.png" alt="Calendar" class="icon">
+                                            <span class="icon__name">Calendar</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/mail.png" alt="Mail" class="icon">
+                                            <span class="icon__name">Mail</span> 
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/news.png" alt="News" class="icon">
+                                            <span class="icon__name">News</span>   
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/maps.png" alt="Map" class="icon">
+                                            <span class="icon__name">Map</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/files.png" alt="Files" class="icon">
+                                            <span class="icon__name">Files</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/contacts.png" alt="Contacts" class="icon">
+                                            <span class="icon__name">Contacts</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/tanslation.png" alt="Translate" class="icon">
+                                            <span class="icon__name">Translate</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/videos.png" alt="Videos" class="icon">
+                                            <span class="icon__name">Videos</span> 
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/search.png" alt="Search" class="icon">
+                                            <span class="icon__name">Search</span> 
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/photos.png" alt="Photos" class="icon">
+                                            <span class="icon__name">Photos</span>  
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                           <img src="img/apps.png" alt="Apps" class="icon">
+                                            <span class="icon__name">Apps</span> 
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            <img src="img/documents.png" alt="Documents" class="icon">
+                                            <span class="icon__name">Documents</span>
+                                        </a>
+                                    </li>
+                                </ul>
 
-                                <label for="checkbox__more">
-                                    <div class="btn__more">More</div>
-                                </label>
+                                <button class="btn__more">
+                                    <label class="btn__more" for="checkbox__more">More</label>
+                                </button>
                                 <input type="checkbox" class="checkbox__more" id="checkbox__more">
 
                                 <div class="more">
-                                    <div class="more__menu">
-                                        <div class="menu__item">
-                                            <img src="img/chat.png" alt="Chat" class="icon">
-                                            <p class="icon__name">Chat</p>
-                                        </div>
-                                        <div class="menu__item">
-                                            <img src="img/classroom.png" alt="Classroom" class="icon">
-                                            <p class="icon__name">Classroom</p>
-                                        </div>
-                                        <div class="menu__item">
-                                            <img src="img/collection.png" alt="Collection" class="icon">
-                                            <p class="icon__name">Collection</p>
-                                        </div>
-                                        <div class="menu__item">
-                                            <img src="img/mars.png" alt="Mars" class="icon">
-                                            <p class="icon__name">Mars</p>
-                                        </div>
-                                        <div class="menu__item">
-                                            <img src="img/blogs.png" alt="Blogs" class="icon">
-                                            <p class="icon__name">Blogs</p>
-                                        </div>
-                                        <div class="menu__item">
-                                            <img src="img/promo.png" alt="Promos" class="icon">
-                                            <p class="icon__name">Promos</p>
-                                        </div>
-                                    </div>
-                                    <div class="btn__evenmore">Even more from Kottans</div>
+                                    <ul class="more__menu">
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">
+                                               <img src="img/chat.png" alt="Chat" class="icon">
+                                                <span class="icon__name">Chat</span> 
+                                            </a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">
+                                                <img src="img/classroom.png" alt="Classroom" class="icon">
+                                                <span class="icon__name">Classroom</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">
+                                                <img src="img/collection.png" alt="Collection" class="icon">
+                                                <span class="icon__name">Collection</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">
+                                                <img src="img/mars.png" alt="Mars" class="icon">
+                                                <span class="icon__name">Mars</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">
+                                               <img src="img/blogs.png" alt="Blogs" class="icon">
+                                                <span class="icon__name">Blogs</span> 
+                                            </a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">
+                                                <img src="img/promo.png" alt="Promos" class="icon">
+                                                <span class="icon__name">Promos</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn__evenmore">Even more from Kottans</a>
                                 </div>
-                              
-                               
-                                    
+
                             </div>
-                                
                         </div>
                     </div>
-                </div></a></li>
+            </li>
                 <li class="nav_item"><a class="link" href="#"> <img class="nav_img" src="img/bell.png" alt="notifications"></a></li>
                 <li class="nav_item"><a class="link" href="#"> <img class="nav_img" src="img/user.png" alt="user"> </a></li>
             </ul>

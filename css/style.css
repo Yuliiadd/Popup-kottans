@@ -24,6 +24,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 input,button,textarea{font-family:inherit;}
 
@@ -52,8 +53,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	align-items:center;
 }
 
-.logo_img {
+.logo__img {
 	height: 60px;
+}
+.logo__link:focus {
+	box-shadow: rgba(0, 0, 255, .2) 1px 0 10px;
 }
 
 .link {
@@ -62,11 +66,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: black;
 }
 
+.link:hover {
+	text-shadow: rgba(0, 0, 255, .2) 1px 0 10px;
+}
+.link:focus {
+	box-shadow: rgba(0, 0, 255, .2) 1px 0 10px;
+}
+
 .nav_item {
 	margin: 0 20px;
 }
 
-.nav ul {
+.navigation__list{
 	display: flex;
 	align-items: center;
 }
@@ -88,6 +99,9 @@ justify-content: center;
 
 
 /* розробка попапа */
+.popup:focus-within {
+	box-shadow: rgba(0, 0, 255, .2) 1px 0 10px;
+}
 
 .context__menu {
 	display: none;
@@ -98,13 +112,13 @@ justify-content: center;
 
 .menu {
 	width: 	255px;
-	height: 365px;
+	height: 292px;
 	background-color: white;
 	border: 1px solid rgba(0, 0, 255, .2);
     position: relative;
 	cursor:default;
-	overflow-y: auto;
-	/* scrollbar-gutter: stable;  */
+	overflow-y: scroll;
+	scrollbar-gutter: stable; 
 }
 
 .context__menu::before {
@@ -143,26 +157,34 @@ justify-content: center;
    /* Стилі контекстного меню */
 
    .menu__item {
-	   display: grid;
-	   gap: 10px;
-	   align-items:center;
-	   justify-items: center;
-	   cursor: pointer;
-	   width: 55px;
 	   height: 55px;
    }
+   
    .menu__item:hover {
 	   border: 1px solid rgb(196, 196, 196);
    }
 
    .menu__item:focus {
 	border: 2px solid rgb(59, 56, 231);
-}
+	}
 
+	.menu__link {
+		display: grid;
+		gap: 10px;
+		align-items:center;
+		justify-items: center;
+		width: 55px;
+		height: 55px;
+		color: black;
+	}
+
+	.menu__link:focus {
+		box-shadow: rgba(0, 0, 255, .2) 1px 0 10px;
+	}
 
    .icon {
-	   width: 25px;
-	   height: 25px;
+	   width: 30px;
+	   height: 30px;
    }
 
    .icon__name {
@@ -171,10 +193,10 @@ justify-content: center;
 
 	.main__menu, .more__menu {
 		display: grid;
-		gap: 15px 15px;
+		gap: 5px 5px;
 		grid-template-columns: 1fr 1fr 1fr;
-		padding: 20px;
-		padding-left: 30px;
+		padding: 10px;
+		padding-left: 20px;
 	
 	}
 	.more {
@@ -182,22 +204,11 @@ justify-content: center;
 		border: 1px solid rgba(0, 0, 255, .2);
 	}
 
-	.btn__more {
-		width: 100%;
-		height: 35px;
-		background-color: rgb(192, 189, 189);
-		color: white;
-		cursor: pointer;
-		font-size: 15px;
-		display: flex;
-		align-items:center;
-		justify-content:center;
-	}
-
+	.btn__more,
 	.btn__evenmore {
 		width: 100%;
 		height: 35px;
-		background-color: white;
+		background-color: rgb(237, 237, 237);
 		color: gray;
 		cursor: pointer;
 		font-size: 15px;
@@ -205,6 +216,17 @@ justify-content: center;
 		align-items:center;
 		justify-content:center;
 	}
+
+	.btn__more:focus, 
+	.btn__evenmore:focus {
+		box-shadow: rgba(0, 0, 255, .2) 1px 0 10px;
+	}
+
+	.btn__evenmore {
+		background-color: rgb(206, 207, 252);
+		color: rgb(255, 255, 255);
+	}
+
 
 	.checkbox__more {
 	   position: absolute;
