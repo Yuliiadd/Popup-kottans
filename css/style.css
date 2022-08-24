@@ -238,5 +238,3 @@ ul li{list-style: none;}
 .checkbox__more:checked ~.btn__more {
 	display:none;
 }
-
-
